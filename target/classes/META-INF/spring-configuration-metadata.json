@@ -1,0 +1,26 @@
+{
+  "hints": [],
+  "groups": [],
+  "properties": [
+    {
+      "name": "server.session-timeout",
+      "description": "A description for 'server.session-timeout'",
+      "type": "java.lang.String"
+    },
+    {
+      "name": "spring.mybatis.config-location",
+      "description": "A description for 'spring.mybatis.config-location'",
+      "type": "java.lang.String"
+    },
+    {
+      "name": "spring.mybatis.mapper-locations",
+      "description": "A description for 'spring.mybatis.mapper-locations'",
+      "type": "java.lang.String"
+    },
+    {
+      "name": "spring.mybatis.type-aliases-package",
+      "description": "A description for 'spring.mybatis.type-aliases-package'",
+      "type": "java.lang.String"
+    }
+  ]
+}

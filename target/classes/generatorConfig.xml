@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE generatorConfiguration PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN" "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
+<generatorConfiguration>
+	<classPathEntry location="C:/Users/Administrator/Desktop/jar/mysql-connector-java-5.1.43.jar"/>
+  <context id="context1">
+    <jdbcConnection connectionURL="jdbc:mysql://127.0.0.1:3306/warehouse" driverClass="com.mysql.jdbc.Driver" password="root" userId="root" />
+    <javaModelGenerator targetPackage="com.zd.testing.business.model" targetProject="testing/src/main/java" />
+    <sqlMapGenerator targetPackage="mapper.business" targetProject="testing/src/main/resources" />
+    <javaClientGenerator targetPackage="com.zd.testing.business.mapper" targetProject="testing/src/main/java" type="XMLMAPPER" />
+    <table tableName="user" domainObjectName="User"></table>
+    <table tableName="unit" domainObjectName="Unit"></table>
+    <table tableName="supplier" domainObjectName="Supplier"></table>
+    <table tableName="repository_details" domainObjectName="RepositoryDetails"></table>
+    <table tableName="repository" domainObjectName="Repository"></table>
+    <table tableName="outbound_details" domainObjectName="OutboundDetails"></table>
+    <table tableName="outbound" domainObjectName="Outbound"></table>
+    <table tableName="inbound_details" domainObjectName="InboundDetails"></table>
+    <table tableName="inbound" domainObjectName="Inbound"></table>
+    <table tableName="goods" domainObjectName="Goods"></table>
+    <table tableName="dept" domainObjectName="Dept"></table>
+    <table tableName="category" domainObjectName="Category"></table>
+    <table tableName="branch" domainObjectName="Branch"></table>
+  </context>
+</generatorConfiguration>
