@@ -54,7 +54,7 @@
     </settings>
 
     <typeAliases>
-        <package name="com.zd.testing.*.model"/>
+        <package name="com.zd.warehouse.*.model"/>
     </typeAliases>
 	<!-- 设置mybtais返回类型为Map结构拦截器 -->
 <!-- 	<plugins>

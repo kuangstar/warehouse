@@ -69,7 +69,7 @@ spring:
         deny: 10.88.89.100
         
       # Spring监控配置,配置_Druid和Spring关联监控配置
-      aop-patterns: com.zd.testing.service.*
+      aop-patterns: com.zd.warehouse.service.*
       
   # 开启cglib动态代理    
   aop:
@@ -108,7 +108,7 @@ spring:
 mybatis:
   config-location: classpath:mybatis/mybatis-config.xml 
   mapper-locations: classpath:mapper/*/*Mapper.xml  
-  type-aliases-package: com.zd.testing.*.model
+  type-aliases-package: com.zd.warehouse.*.model
 
 #pagehelper分页插件
 pagehelper:
@@ -120,5 +120,5 @@ pagehelper:
 # 日志配置    
 logging: 
   level: 
-    com.zd.testing: debug
+    com.zd.warehouse: debug
     

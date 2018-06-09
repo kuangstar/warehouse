@@ -7,7 +7,7 @@
 		<relativePath />
 	</parent>
 	<modelVersion>4.0.0</modelVersion>
-	<groupId>com.zd.testing</groupId>
+	<groupId>com.zd.warehouse</groupId>
 	<artifactId>testing</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	
