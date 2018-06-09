@@ -8,9 +8,9 @@ spring:
   # 数据源配置
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/warehouse?useUnicode=true&characterEncoding=utf-8
-    username: root
-    password: root
+    url: jdbc:mysql://123.207.39.209:3306/warehouse?useUnicode=true&characterEncoding=utf-8
+    username: dba
+    password: hnzdjc@
     # 使用druid数据源
     druid:
       # 配置监控统计拦截的filters

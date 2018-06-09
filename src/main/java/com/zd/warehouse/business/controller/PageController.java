@@ -17,6 +17,6 @@ public class PageController {
 	}
 	@RequestMapping("/database/goods")
 	public String databaseGoods(){
-		return "database-goods";
+		return "database_goods";
 	}
 }

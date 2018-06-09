@@ -72,7 +72,6 @@ public class ShiroRealm extends AuthorizingRealm {
 //            throw new AuthenticationException("用户已经被禁用");
 //        }
         SimpleAuthenticationInfo simpleAuthenticationInfo = new SimpleAuthenticationInfo(user, user.getPassword(), this.getClass().getName());
-        System.out.println(simpleAuthenticationInfo.toString());
         return simpleAuthenticationInfo;
 	}
 	  /**

@@ -3,10 +3,10 @@
 <generatorConfiguration>
 	<classPathEntry location="C:/Users/Administrator/Desktop/jar/mysql-connector-java-5.1.43.jar"/>
   <context id="context1">
-    <jdbcConnection connectionURL="jdbc:mysql://127.0.0.1:3306/warehouse" driverClass="com.mysql.jdbc.Driver" password="root" userId="root" />
-    <javaModelGenerator targetPackage="com.zd.warehouse.business.model" targetProject="testing/src/main/java" />
-    <sqlMapGenerator targetPackage="mapper.business" targetProject="testing/src/main/resources" />
-    <javaClientGenerator targetPackage="com.zd.warehouse.business.mapper" targetProject="testing/src/main/java" type="XMLMAPPER" />
+    <jdbcConnection connectionURL="jdbc:mysql://123.207.39.209:3306/warehouse" driverClass="com.mysql.jdbc.Driver" password="hnzdjc@" userId="dba" />
+    <javaModelGenerator targetPackage="com.zd.warehouse.business.model" targetProject="warehouse/src/main/java" />
+    <sqlMapGenerator targetPackage="mapper.business" targetProject="warehouse/src/main/resources" />
+    <javaClientGenerator targetPackage="com.zd.warehouse.business.mapper" targetProject="warehouse/src/main/java" type="XMLMAPPER" />
     <table tableName="user" domainObjectName="User"></table>
     <table tableName="unit" domainObjectName="Unit"></table>
     <table tableName="supplier" domainObjectName="Supplier"></table>

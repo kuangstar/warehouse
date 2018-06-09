@@ -303,10 +303,10 @@
             <!-- 面包屑导航 -->
 				<div class="row">
 					<div class="col-md-12">
-						<h1 class="page-header">商品</h1>
+						<h1 class="page-header">物品</h1>
 						<ol class="breadcrumb">
 							<li class="active">基础数据</li>
-							<li class="active">商品</li>
+							<li class="active">物品</li>
 						</ol>
 					</div>
 				</div>
@@ -315,15 +315,15 @@
                         <div class="panel panel-default">
                         <!-- 内容导航 -->
 							<ul class="nav nav-tabs">
-								<li class="active"><a href="#goods_have" data-toggle="tab">已有商品数据</a>
+								<li class="active"><a href="#goods_have" data-toggle="tab">已有物品数据</a>
 								</li>
-								<li class=""><a href="#goods_add" data-toggle="tab">新增商品数据</a>
+								<li class=""><a href="#goods_add" data-toggle="tab">新增物品数据</a>
 								</li>
-								<li class=""><a href="#" data-toggle="tab">新增商品单位</a>
+								<li class=""><a href="#goods_more_add" data-toggle="tab">新增物品属性</a>
 								</li>
 							</ul>
 							<div class="panel-body tab-content">
-								<!-- 已有商品数据 -->
+								<!-- 已有物品数据 -->
                                 <div class=" tab-pane fade in active" id="goods_have">
 									<table class="table table-striped table-bordered table-hover" id="dataTables-example">
                                         <thead>
@@ -382,23 +382,23 @@
                                         </tbody>
                                     </table>
                                 </div>
-                            	<!-- 新增商品数据 -->
+                            	<!-- 新增物品数据 -->
                                 <div class="table-responsive tab-pane fade in col-md-4 col-sm-6 col-xs-12 col-md-offset-4" id="goods_add">
 									<form role="form">
 										<div class="form-group">
-											<label>请输入商品编码：</label>
+											<label>请输入物品编码：</label>
 											<input type="text" class="form-control" placeholder="请输入物品名称"/>
 										</div>
 										<div class="form-group">
-											<label>请输入商品名称：</label>
+											<label>请输入物品名称：</label>
 											<input type="text" class="form-control" placeholder="请输入物品名称"/>
 										</div>
 										<div class="form-group">
-											<label>请输入商品型号规格：</label>
+											<label>请输入物品型号规格：</label>
 											<input type="text" class="form-control" placeholder="请输入物品名称"/>
 										</div>
 										<div class="form-group">
-											<label>请选择商品分类：</label>
+											<label>请选择物品分类：</label>
 											<select class="form-control">
 												<option>1</option>
 												<option>2</option>
@@ -408,7 +408,7 @@
 											</select>
 										</div>
 										<div class="form-group">
-											<label>请选择商品单位：</label>
+											<label>请选择物品单位：</label>
 											<select class="form-control">
 												<option>1</option>
 												<option>2</option>
@@ -418,7 +418,7 @@
 											</select>
 										</div>
 										<div class="form-group">
-											<label>请选择商品品牌：</label>
+											<label>请选择物品品牌：</label>
 											<select class="form-control">
 												<option>1</option>
 												<option>2</option>
@@ -428,7 +428,7 @@
 											</select>
 										</div>
 										<div class="form-group">
-											<label>请选择商品属性：</label>
+											<label>请选择物品属性：</label>
 											<label class="radio-inline">
                                                 <input type="radio" name="optionsRadiosInline" id="optionsRadiosInline1" value="option1" checked=""/>1
                                             </label>
@@ -446,10 +446,33 @@
 										<li><button class="btn btn-primary">取消</button></li>
 									</ul>
                                 </div>
-                                <!-- 新增商品单位 -->
-                                <div class="table-responsive tab-pane fade in col-md-4 col-sm-6 col-xs-12 col-md-offset-4" id="goods_unit_add">
-                                	
-                                </div>
+                                <!-- 新增物品单位 -->
+                                <div class="table-responsive tab-pane fade in" id="goods_more_add">
+									<div class="col-md-6 col-sm-6 col-xs-12">
+										<form role="form">
+											<div class="form-group">
+												<label>请输入单位名称：</label>
+												<input type="text" class="form-control" id="unit_add_unitName"/>
+											</div>
+										</form>
+										<ul class="nav nav-pills">
+											<li><button class="btn btn-primary" id="unit_add_submit">提交</button></li>
+											<li><button class="btn btn-primary" id="unit_add_reset">取消</button></li>
+										</ul>
+									</div>
+									<div class="col-md-6 col-sm-6 col-xs-12">
+										<form role="form">
+											<div class="form-group">
+												<label>请输入品牌名称：</label> <input type="text"
+													class="form-control" />
+											</div>
+										</form>
+										<ul class="nav nav-pills">
+											<li><button class="btn btn-primary">提交</button></li>
+											<li><button class="btn btn-primary">取消</button></li>
+										</ul>
+									</div>
+								</div>
                             </div>
                         </div>
 
@@ -473,11 +496,12 @@
       <!-- Custom Js -->
     <script src="../../assets/js/dataTables/jquery.dataTables.js"></script>
     <script src="../../assets/js/dataTables/dataTables.bootstrap.js"></script>
-    <script>
+    <script src="../../js/database_goods.js"></script>
+    <!-- <script>
             $(document).ready(function () {
                 $('#dataTables-example').dataTable();
             });
-    </script>
+    </script> -->
     <script src="../../assets/js/custom-scripts.js"></script>
    
 </body>
