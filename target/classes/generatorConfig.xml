@@ -7,18 +7,77 @@
     <javaModelGenerator targetPackage="com.zd.warehouse.business.model" targetProject="warehouse/src/main/java" />
     <sqlMapGenerator targetPackage="mapper.business" targetProject="warehouse/src/main/resources" />
     <javaClientGenerator targetPackage="com.zd.warehouse.business.mapper" targetProject="warehouse/src/main/java" type="XMLMAPPER" />
-    <table tableName="user" domainObjectName="User"></table>
-    <table tableName="unit" domainObjectName="Unit"></table>
-    <table tableName="supplier" domainObjectName="Supplier"></table>
-    <table tableName="repository_details" domainObjectName="RepositoryDetails"></table>
-    <table tableName="repository" domainObjectName="Repository"></table>
-    <table tableName="outbound_details" domainObjectName="OutboundDetails"></table>
-    <table tableName="outbound" domainObjectName="Outbound"></table>
-    <table tableName="inbound_details" domainObjectName="InboundDetails"></table>
-    <table tableName="inbound" domainObjectName="Inbound"></table>
-    <table tableName="goods" domainObjectName="Goods"></table>
-    <table tableName="dept" domainObjectName="Dept"></table>
-    <table tableName="category" domainObjectName="Category"></table>
-    <table tableName="branch" domainObjectName="Branch"></table>
+    <table tableName="user" domainObjectName="User"
+    	enableCountByExample="false"
+        enableUpdateByExample="false"
+        enableDeleteByExample="false"
+        enableSelectByExample="false"
+        selectByExampleQueryId="false"></table>
+    <table tableName="unit" domainObjectName="Unit"
+   		enableCountByExample="false"
+        enableUpdateByExample="false"
+        enableDeleteByExample="false"
+        enableSelectByExample="false"
+        selectByExampleQueryId="false"></table>
+    <table tableName="supplier" domainObjectName="Supplier"
+    	enableCountByExample="false"
+        enableUpdateByExample="false"
+        enableDeleteByExample="false"
+        enableSelectByExample="false"
+        selectByExampleQueryId="false"></table>
+    <table tableName="repository_details" domainObjectName="RepositoryDetails"
+    	enableCountByExample="false"
+        enableUpdateByExample="false"
+        enableDeleteByExample="false"
+        enableSelectByExample="false"
+        selectByExampleQueryId="false"></table>
+    <table tableName="outbound_details" domainObjectName="OutboundDetails"
+    	enableCountByExample="false"
+        enableUpdateByExample="false"
+        enableDeleteByExample="false"
+        enableSelectByExample="false"
+        selectByExampleQueryId="false"></table>
+    <table tableName="outbound" domainObjectName="Outbound"
+    	enableCountByExample="false"
+        enableUpdateByExample="false"
+        enableDeleteByExample="false"
+        enableSelectByExample="false"
+        selectByExampleQueryId="false"></table>
+    <table tableName="inbound_details" domainObjectName="InboundDetails"
+    	enableCountByExample="false"
+        enableUpdateByExample="false"
+        enableDeleteByExample="false"
+        enableSelectByExample="false"
+        selectByExampleQueryId="false"></table>
+    <table tableName="inbound" domainObjectName="Inbound"
+    	enableCountByExample="false"
+        enableUpdateByExample="false"
+        enableDeleteByExample="false"
+        enableSelectByExample="false"
+        selectByExampleQueryId="false"></table>
+    <table tableName="goods" domainObjectName="Goods"
+    	enableCountByExample="false"
+        enableUpdateByExample="false"
+        enableDeleteByExample="false"
+        enableSelectByExample="false"
+        selectByExampleQueryId="false"></table>
+    <table tableName="dept" domainObjectName="Dept"
+    	enableCountByExample="false"
+        enableUpdateByExample="false"
+        enableDeleteByExample="false"
+        enableSelectByExample="false"
+        selectByExampleQueryId="false"></table>
+    <table tableName="category" domainObjectName="Category"
+    	enableCountByExample="false"
+        enableUpdateByExample="false"
+        enableDeleteByExample="false"
+        enableSelectByExample="false"
+        selectByExampleQueryId="false"></table>
+	<table tableName="branch" domainObjectName="Branch"
+		enableCountByExample="false"
+        enableUpdateByExample="false"
+        enableDeleteByExample="false"
+        enableSelectByExample="false"
+        selectByExampleQueryId="false"></table>
   </context>
 </generatorConfiguration>

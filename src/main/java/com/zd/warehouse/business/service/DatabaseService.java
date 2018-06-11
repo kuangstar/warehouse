@@ -1,5 +1,7 @@
 package com.zd.warehouse.business.service;
 
+import com.zd.warehouse.business.model.Branch;
+import com.zd.warehouse.business.model.Category;
 import com.zd.warehouse.business.model.Unit;
 
 /**
@@ -8,5 +10,10 @@ import com.zd.warehouse.business.model.Unit;
  * 
  */
 public interface DatabaseService {
+	//插入单位名称
 	int insertUnit(Unit unit);
+	//插入品牌名称
+	int insertBranch(Branch branch);
+	//插入品牌名称
+	int insertCategory(Category category);
 }

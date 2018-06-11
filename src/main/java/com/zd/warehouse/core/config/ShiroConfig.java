@@ -66,7 +66,7 @@ public class ShiroConfig {
 		filterChainDefinitionManager.put("/js/**", "anon");// 对后台管理系统不拦截
 		filterChainDefinitionManager.put("/fonts/**", "anon");// 对后台管理系统不拦截
 		filterChainDefinitionManager.put("/assets/**", "anon");// 对后台管理系统不拦截
-		filterChainDefinitionManager.put("/**", "authc");// 其他资源全部拦截
+		filterChainDefinitionManager.put("/**", "anon");// 其他资源全部拦截
 		shiroFilterFactoryBean
 				.setFilterChainDefinitionMap(filterChainDefinitionManager);
 		shiroFilterFactoryBean.setLoginUrl("/user/login");

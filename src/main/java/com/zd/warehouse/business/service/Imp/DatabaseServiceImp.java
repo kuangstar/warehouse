@@ -4,7 +4,11 @@ import javax.annotation.Resource;
 
 import org.springframework.stereotype.Service;
 
+import com.zd.warehouse.business.mapper.BranchMapper;
+import com.zd.warehouse.business.mapper.CategoryMapper;
 import com.zd.warehouse.business.mapper.UnitMapper;
+import com.zd.warehouse.business.model.Branch;
+import com.zd.warehouse.business.model.Category;
 import com.zd.warehouse.business.model.Unit;
 import com.zd.warehouse.business.service.DatabaseService;
 
@@ -17,9 +21,25 @@ import com.zd.warehouse.business.service.DatabaseService;
 public class DatabaseServiceImp implements DatabaseService {
 	@Resource
 	private UnitMapper unitMapper;
+	
+	@Resource
+	private BranchMapper branchMapper;
+	
+	@Resource
+	private CategoryMapper categoryMapper;
+	
 	@Override
 	public int insertUnit(Unit unit) {
 		return unitMapper.insert(unit);
 	}
-
+	
+	@Override
+	public int insertBranch(Branch branch) {
+		return branchMapper.insert(branch);
+	}
+	
+	@Override
+	public int insertCategory(Category category) {
+		return categoryMapper.insert(category);
+	}
 }
