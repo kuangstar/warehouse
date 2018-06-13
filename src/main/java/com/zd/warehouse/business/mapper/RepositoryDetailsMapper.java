@@ -1,5 +1,7 @@
 package com.zd.warehouse.business.mapper;
 
+import java.util.List;
+
 import com.zd.warehouse.business.model.RepositoryDetails;
 
 public interface RepositoryDetailsMapper {
@@ -50,4 +52,8 @@ public interface RepositoryDetailsMapper {
      * @mbggenerated Mon Jun 11 15:19:39 CST 2018
      */
     int updateByPrimaryKey(RepositoryDetails record);
+
+	List<RepositoryDetails> queryAll();
+
+	int deleteRepository(List<String> list);
 }

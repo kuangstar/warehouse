@@ -1,5 +1,7 @@
 package com.zd.warehouse.business.mapper;
 
+import java.util.List;
+
 import com.zd.warehouse.business.model.Category;
 
 public interface CategoryMapper {
@@ -50,4 +52,6 @@ public interface CategoryMapper {
      * @mbggenerated Mon Jun 11 15:19:40 CST 2018
      */
     int updateByPrimaryKey(Category record);
+
+	List<Category> queryAllCategory();
 }

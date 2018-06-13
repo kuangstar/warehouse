@@ -1,5 +1,7 @@
 package com.zd.warehouse.business.mapper;
 
+import java.util.List;
+
 import com.zd.warehouse.business.model.Unit;
 
 public interface UnitMapper {
@@ -50,4 +52,8 @@ public interface UnitMapper {
      * @mbggenerated Mon Jun 11 15:19:39 CST 2018
      */
     int updateByPrimaryKey(Unit record);
+    /**
+     * 查询所有单位
+     */
+    List<Unit> queryAllUnit();
 }

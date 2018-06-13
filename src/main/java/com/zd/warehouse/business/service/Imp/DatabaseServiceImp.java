@@ -1,5 +1,7 @@
 package com.zd.warehouse.business.service.Imp;
 
+import java.util.List;
+
 import javax.annotation.Resource;
 
 import org.springframework.stereotype.Service;
@@ -41,5 +43,18 @@ public class DatabaseServiceImp implements DatabaseService {
 	@Override
 	public int insertCategory(Category category) {
 		return categoryMapper.insert(category);
+	}
+	
+	@Override
+	public List<Unit> queryAllUnit() {
+		return unitMapper.queryAllUnit();
+	}
+	@Override
+	public List<Branch> queryAllBranch() {
+		return branchMapper.queryAllBranch();
+	}
+	@Override
+	public List<Category> queryAllCategory() {
+		return categoryMapper.queryAllCategory();
 	}
 }

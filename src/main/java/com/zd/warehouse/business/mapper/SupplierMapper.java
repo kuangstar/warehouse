@@ -1,5 +1,7 @@
 package com.zd.warehouse.business.mapper;
 
+import java.util.List;
+
 import com.zd.warehouse.business.model.Supplier;
 
 public interface SupplierMapper {
@@ -50,4 +52,8 @@ public interface SupplierMapper {
      * @mbggenerated Mon Jun 11 15:19:39 CST 2018
      */
     int updateByPrimaryKey(Supplier record);
+
+	int deleteSupplier(List<String> list);
+
+	List<Supplier> querySomeSuppliers(List<Integer> list);
 }

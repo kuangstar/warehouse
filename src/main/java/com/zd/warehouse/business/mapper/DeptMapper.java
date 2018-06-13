@@ -1,5 +1,7 @@
 package com.zd.warehouse.business.mapper;
 
+import java.util.List;
+
 import com.zd.warehouse.business.model.Dept;
 
 public interface DeptMapper {
@@ -50,4 +52,10 @@ public interface DeptMapper {
      * @mbggenerated Mon Jun 11 15:19:40 CST 2018
      */
     int updateByPrimaryKey(Dept record);
+
+	int deleteDept(List<String> list);
+
+	List<Dept> queryAll();
+
+	Dept queryDept(Integer deptId);
 }

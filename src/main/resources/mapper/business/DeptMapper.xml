@@ -108,4 +108,14 @@
       dept_address = #{deptAddress,jdbcType=VARCHAR}
     where id = #{id,jdbcType=INTEGER}
   </update>
+  <delete id="deleteDept" parameterType="java.util.List">
+  	delete from dept where id in 
+  	<foreach collection="list" item="item" open="(" separator="," close=")">#{item}</foreach>
+  </delete>
+  <select id="queryAll" resultMap="BaseResultMap">
+  	select d.id,d.dept_name,d.dept_address from dept d
+  </select>
+  <select id="queryDept" resultMap="BaseResultMap">
+  	select d.id,d.dept_name,d.dept_address from dept d where d.id = #{deptId}
+  </select>
 </mapper>

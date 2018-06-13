@@ -4,8 +4,12 @@ import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiImplicitParam;
 import io.swagger.annotations.ApiOperation;
 
+import java.util.List;
+
 import javax.annotation.Resource;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -25,7 +29,9 @@ import com.zd.warehouse.business.service.DatabaseService;
 @Controller
 @RequestMapping("/goods_database")
 @Api(tags={"商品基础数据操作接口"})
-public class GoodsController {
+public class GoodsDatabaseDropedController {
+	Logger logger = LoggerFactory.getLogger(GoodsDatabaseDropedController.class);
+	
 	@Resource
 	private DatabaseService databaseService;
 	/*
@@ -33,21 +39,24 @@ public class GoodsController {
 	 */
 	@PostMapping("/unit_add")
 	@ResponseBody
-	@ApiOperation(value="添加单位--kuangStar",httpMethod="POST",response=Unit.class,notes="根据单位实体添加单位")
-	@ApiImplicitParam(name="unit",value="单位实体",required = true, dataType = "Unit", paramType = "form")
 	public Unit unitAdd(@RequestBody Unit unit){
 		if(databaseService.insertUnit(unit)>0){
 			return unit;
 		}
 		return null;
 	}
+	
+	@PostMapping("/unit_")
+	@ResponseBody
+	public List<Unit> queryAllUnit(){
+		List<Unit> units = databaseService.queryAllUnit();
+		return units;
+	}
 	/*
 	 * 添加品牌
 	 */
 	@PostMapping("/branch_add")
 	@ResponseBody
-	@ApiOperation(value="添加品牌--kuangStar",httpMethod="POST",response=Branch.class,notes="根据品牌实体添加实体")
-	@ApiImplicitParam(name="branch",value="品牌实体",required=true,dataType = "Branch",paramType = "form") 
 	public Branch branchAdd(@RequestBody Branch branch){
 		if(databaseService.insertBranch(branch)>0){
 			return branch;

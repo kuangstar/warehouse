@@ -95,4 +95,7 @@
     set unit_name = #{unitName,jdbcType=VARCHAR}
     where id = #{id,jdbcType=INTEGER}
   </update>
+  <select id="queryAllUnit">
+  	select u.id,u.unit_name from Unit u
+  </select>
 </mapper>

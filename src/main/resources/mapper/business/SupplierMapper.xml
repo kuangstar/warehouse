@@ -165,4 +165,14 @@
       note = #{note,jdbcType=VARCHAR}
     where id = #{id,jdbcType=INTEGER}
   </update>
+  <delete id="deleteSupplier" parameterType="java.util.List">
+  	delete s.supplier_name,s.contact,s.address,s.phone,s.goods_address,s.goods_type_id,s.note 
+  	from supplier s where s.id in 
+  	<foreach collection="list" item="item" open="(" separator="," close=")">#{item}</foreach>
+  </delete>
+  <select id="querySomeSuppliers" resultMap="BaseResultMap" parameterType="java.util.List">
+  	select s.id,s.supplier_name,s.contact,s.address,s.phone,s.goods_address,s.goods_type_id,s.note 
+  	from supplier s where s.id in 
+  	<foreach collection="list" item="item" open="(" separator="," close=")">#{item}</foreach>
+  </select>
 </mapper>

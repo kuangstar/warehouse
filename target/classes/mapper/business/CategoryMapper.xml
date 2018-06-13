@@ -95,4 +95,7 @@
     set name = #{name,jdbcType=VARCHAR}
     where id = #{id,jdbcType=INTEGER}
   </update>
+  <select id="queryAllCategory" resultMap="BaseResultMap">
+  	select c.id,c.name from category c
+  </select>
 </mapper>
